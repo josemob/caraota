@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="YOUR-PROJECT/chaffle.min.js"></script>
+    <!-- CDN -->
+    <script src="src/chaffle.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="caraota-r">
+        <p id="selector" data-chaffle="cn">00000</p>
+        <p id="ghost" style="display: none">98983</p>
+        <h3 id="nombre" class="no-view">Fulanito Peréz</h3>
+        
+    </div>
+    
+    <video id="videoBackground" src="src/videoBackground.m4v" autoplay muted loop></video>
+
+    <script>
+        var elements = document.querySelectorAll('[data-chaffle]');
+        
+        
+        
+        
+        
+        $(document).ready(function () {
+
+    var resp = 0;
+
+
+    $(window).keydown(function (event) {
+        console.log(event.which);
+        if (event.which == 32) {
+            
+            $('#selector').text( $('#ghost').text() );
+            
+            Array.prototype.forEach.call(elements, function(el) {
+            var chaffle = new Chaffle(el, {
+                speed: 30,
+                delay: 350,
+            });
+            chaffle.init();
+            
+            setTimeout(function(){ $('#nombre').addClass('view') }, 2100);
+            
+            
+            
+        });
+        } else if (event.which == 37) {
+            prev();
+        } else if(event.which == 82){
+            location.reload();
+        }
+        
+    });
+        })
+    </script>
+</body></html>

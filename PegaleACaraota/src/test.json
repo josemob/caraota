@@ -1,0 +1,84 @@
+  {
+      "preguntas": [
+          {
+              "pregunta": "¿Qué indicación le dió Chespirito al actor que hizo el papel de Don Ramón en el Chavo?",
+              "opcion1": "No llegues tarde",
+              "opcion2": "Habla más suave",
+              "opcion3": "Sé tú mismo",
+              "opcion4": "Mejora tu gestualidad",
+              "opcionWin": "3"
+          },
+          {
+              "pregunta": "¿Qué le regaló una empresa estadounidense de camiones de basura a un niño?",
+              "opcion1": "Una pelota",
+              "opcion2": "Una bolsa con regalos",
+              "opcion3": "Un bate de béisbol",
+              "opcion4": "Una torta de cumpleaños",
+              "opcionWin": "2"
+          },
+          {
+              "pregunta": "¿En qué fecha la NASA hará el primer vuelo de helicóptero en Marte?",
+              "opcion1": "A finales del año en curso",
+              "opcion2": "el 05 de julio del 2021",
+              "opcion3": "En la celebración del año nuevo",
+              "opcion4": "Desde el 8 de abril",
+              "opcionWin": "4"
+          },
+          {
+              "pregunta": "¿Cuándo se tiene previsto que se estrene la película Cruella?",
+              "opcion1": "Para julio del 2021",
+              "opcion2": "Ya se estrenó ",
+              "opcion3": "El 27 de mayo ",
+              "opcion4": "Para el año 2022",
+              "opcionWin": "3"
+          },
+          {
+              "pregunta": "¿Cuáles son las dos cosas extraordinarias en el perfil de Instagram de Jamie Lynn?",
+              "opcion1": "El número de seguidores y su apellido",
+              "opcion2": "Su foto de perfil y sus seguidores",
+              "opcion3": "Un mosaico central y su apellido",
+              "opcion4": "Una ardiente foto más su foto",
+              "opcionWin": "1"
+          },
+          {
+              "pregunta": "¿Qué papel jugará el príncipe Harry tras un contrato multimillonario?",
+              "opcion1": "Accionista",
+              "opcion2": "Director creativo",
+              "opcion3": "Productor ejecutivo",
+              "opcion4": "Actor",
+              "opcionWin": "3"
+          },
+          {
+              "pregunta": "¿Cuántos ha perdido el Manchester City por la pandemia?",
+              "opcion1": "900 millones de libras",
+              "opcion2": "250 millones de libras",
+              "opcion3": "58 millones de libras",
+              "opcion4": "126 millones de libras",
+              "opcionWin": "4"
+          },
+          {
+              "pregunta": "¿Con qué cantidad de kilómetros se deben cambiar los amortiguadores a tu vehículo?",
+              "opcion1": "A partir de los 65.000 kilómetros recorridos",
+              "opcion2": "A partir de los 80.000 kilómetros recorridos",
+              "opcion3": "A partir de los 70.000 kilómetros recorridos",
+              "opcion4": "A partir de los 90.000 kilómetros recorridos",
+              "opcionWin": "1"
+          },
+          {
+              "pregunta": "¿Qué nombre tendrá la bebé de J Balvin y su novia Valentina Ferrer?",
+              "opcion1": "Astromelia",
+              "opcion2": "Mía",
+              "opcion3": "Río",
+              "opcion4": "Jade",
+              "opcionWin": "3"
+          },
+          {
+              "pregunta": "¿Según experto cuántos amigos debemos tener para ser exitosos?",
+              "opcion1": "5 personas",
+              "opcion2": "1 persona",
+              "opcion3": "Sólo tu familia",
+              "opcion4": "150 personas",
+              "opcionWin": "4"
+          }
+    ]
+  }

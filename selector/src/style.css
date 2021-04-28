@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200;1,700;1,800;1,900&display=swap');
+
+*{margin: 0; padding: 0; color: black}
+
+body{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#caraota-r{
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    margin-top: -300px;
+    left: 50%;
+    margin-left: -350px;
+    background-image: url(../src/cp2.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+#selector{
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 184px;
+    width: 293px;
+    height: 56px;
+    letter-spacing: 26px;
+    padding: 0px 24px;
+    overflow: hidden;
+}
+
+#nombre{
+    color: white;
+    position: absolute;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 448px;
+    margin-left: 170px;
+    width:365px;
+    text-align: center;
+}
+
+.no-view{
+    opacity: 0;
+    transition-duration: 0.8s !important;
+}
+
+.view{
+    opacity: 1;
+}
+
+#videoBackground{
+    width: 100%;
+    z-index: -1;
+}
