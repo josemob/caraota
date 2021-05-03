@@ -85,6 +85,17 @@ body{
 
 ====================-*/
 
+#participante{
+    color: white;
+    position: absolute;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    font-family: Oswald, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    right: 20px;
+    top: 10px;
+}
+
 .radius-boton{
     position: absolute;
     bottom: 0;
