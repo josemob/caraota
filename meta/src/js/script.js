@@ -148,8 +148,8 @@ var waypoint =
             if (num == 1 && anchura > 768) {
                 modx = stagei.getBoundingClientRect();
                 document.getElementById('modi').classList.add("visible");
-                document.getElementById("modi").style.marginTop = modx.top - 410 + "px";
-                document.getElementById("modi").style.marginLeft = modx.left + 20 + "px";
+                document.getElementById("modi").style.marginTop = modx.top - 318 + "px";
+                document.getElementById("modi").style.marginLeft = modx.left + 14 + "px";
             }
             if (num == 1 && anchura < 768) {
                 document.getElementById('modalss').classList.add("front");
@@ -159,8 +159,8 @@ var waypoint =
             if (num == 2 && anchura > 768) {
                 modx = stageii.getBoundingClientRect();
                 document.getElementById('modii').classList.add("visible");
-                document.getElementById("modii").style.marginTop = modx.top - 410 + "px";
-                document.getElementById("modii").style.marginLeft = modx.left + 20 + "px";
+                document.getElementById("modii").style.marginTop = modx.top - 392 + "px";
+                document.getElementById("modii").style.marginLeft = modx.left + 14 + "px";
             }
             if (num == 2 && anchura < 768) {
                 document.getElementById('modii').classList.add("visible");
@@ -170,8 +170,8 @@ var waypoint =
             if (num == 3 && anchura > 768) {
                 modx = stageiii.getBoundingClientRect();
                 document.getElementById('modiii').classList.add("visible");
-                document.getElementById("modiii").style.marginTop = modx.top - 265 + "px";
-                document.getElementById("modiii").style.marginLeft = modx.left + 20 + "px";
+                document.getElementById("modiii").style.marginTop = modx.top - 220 + "px";
+                document.getElementById("modiii").style.marginLeft = modx.left + 14 + "px";
             }
             if (num == 3 && anchura < 768) {
                 document.getElementById('modiii').classList.add("visible");
@@ -181,7 +181,7 @@ var waypoint =
             if (num == 4 && anchura > 768) {
                 modx = stageiv.getBoundingClientRect();
                 document.getElementById('modiv').classList.add("visible");
-                document.getElementById("modiv").style.marginTop = modx.top - 120 + "px";
+                document.getElementById("modiv").style.marginTop = modx.top - 170 + "px";
                 document.getElementById("modiv").style.marginLeft = modx.left - 470 + "px";
             }
             if (num == 4 && anchura < 768) {
@@ -309,9 +309,6 @@ var waypoint =
                 document.getElementById('modxii').classList.remove("visible");
                 document.getElementById('modxiii').classList.remove("visible");
                 document.getElementById('modxiv').classList.remove("visible");
-
-
-
                 document.getElementById('modalss').classList.add("back");
             }
         }
