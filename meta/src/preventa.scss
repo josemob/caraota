@@ -72,6 +72,7 @@ section.formulario {
       margin-top: 35px;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       > div {
         display: flex;
         align-items: center;
