@@ -34,6 +34,11 @@
   --clr-toggle: #ffffff;
 }
 
+#liveAlertPlaceholder {
+  position: fixed;
+  top: 70px;
+}
+
 .litepaper {
   a.btn {
     text-decoration: none;
@@ -45,26 +50,25 @@
     :hover {
       border: 2px solid #007fb4;
     }
-  }
-}
-
-.switch_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 22px;
-  position: absolute;
-  top: 25px;
-  right: 13px;
-  z-index: 1;
-  .btn {
-    border: 2px solid white;
-    border-radius: 50px;
-    color: white;
-    font-family: "Orbitron-Medium";
-    font-size: 0.9em;
-    padding: 2px 14px;
+    .switch_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 22px;
+      position: absolute;
+      top: 25px;
+      right: 13px;
+      z-index: 1;
+      .btn {
+        border: 2px solid white;
+        border-radius: 50px;
+        color: white;
+        font-family: "Orbitron-Medium";
+        font-size: 0.9em;
+        padding: 2px 14px;
+      }
+    }
   }
 }
 
@@ -89,7 +93,6 @@
     overflow: hidden;
     transition-duration: 1s;
     opacity: 0 !important;
-
     .left > div:nth-child(1) {
       margin-left: -100vw;
     }
@@ -122,7 +125,6 @@ header {
   position: fixed;
   top: 0px;
   height: 56px;
-
   #logo-header {
     display: flex;
     height: 56px;
@@ -144,7 +146,6 @@ sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   a {
     margin: 12px 0px;
     border: 2px solid white;
@@ -169,11 +170,9 @@ sidebar {
   background-image: url(../img/header-background2.jpg);
   background-size: cover;
   background-position: center bottom;
-
   img {
     max-width: 450px;
   }
-
   h4 {
     font-family: Orbitron-Bold;
     text-transform: uppercase;
@@ -185,25 +184,30 @@ sidebar {
   }
 }
 
+@mixin styleh {
+  font-family: Orbitron-bold;
+  color: #fff;
+  line-height: 1.3em;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
 .desc {
   background-image: url(../img/Master_Background.png);
-  justify-content: center;
-
-  .info-ser {
+  .icon-ser {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    h5 {
-      font-family: Orbitron-bold;
-      color: #fff;
-      line-height: 1.3em;
-      margin-top: 15px;
-      margin-bottom: 8px;
-    }
     img {
       width: 160px;
+    }
+  }
+  .info-ser {
+    h5 {
+      @include styleh;
+    }
+    img {
       margin: 6px 0px 10px;
     }
     p {
@@ -213,30 +217,25 @@ sidebar {
       color: #fff;
       line-height: 1.3em;
     }
+    .space {
+      margin: 30px 0px;
+      height: 70px;
+      width: 1px;
+      :before {
+        content: "";
+        border: 1px solid #4a667c;
+        position: absolute;
+        height: 70px;
+        margin-left: -1px;
+      }
+    }
   }
 }
 
 .box-info3 h5 {
-  font-family: Orbitron-bold;
-  color: #fff;
-  line-height: 1.3em;
-  margin-top: 15px;
-  margin-bottom: 8px;
+  @include styleh;
   font-size: 1.6em;
   margin: 0px 0px 17px 0px;
-}
-
-.space {
-  margin: 30px 0px;
-  height: 70px;
-  width: 1px;
-  :before {
-    content: "";
-    border: 1px solid #4a667c;
-    position: absolute;
-    height: 70px;
-    margin-left: -1px;
-  }
 }
 
 .space2 {
@@ -263,206 +262,152 @@ sidebar {
     img {
       margin: 20px 0px 20px 0px !important;
     }
-  }
-
-  .ghost {
-    opacity: 1;
-  }
-
-  .box-info {
-    .box3,
-    .box2,
-    .box1 {
-      width: 290px !important;
-      height: 470px !important;
-      margin: 0px 0px 27px !important;
-      :before {
-        content: "";
+    .ghost {
+      opacity: 1;
+    }
+    .box-info {
+      .box3,
+      .box2,
+      .box1 {
         width: 290px !important;
         height: 470px !important;
-        background-repeat: no-repeat;
-        position: absolute;
-        background-size: 100% auto;
+        margin: 0px 0px 27px !important;
+        :before {
+          content: "";
+          width: 290px !important;
+          height: 470px !important;
+          background-repeat: no-repeat;
+          position: absolute;
+          background-size: 100% auto;
+        }
+        :after {
+          content: "";
+          width: 290px !important;
+          height: 470px !important;
+          background-repeat: no-repeat;
+          position: absolute;
+          background-size: 100% auto;
+        }
+        > p:nth-child(2) {
+          width: 200px !important;
+          height: 74px !important;
+          line-height: 71px !important;
+          font-size: 1.1em !important;
+        }
+        > p:nth-child(3) {
+          font-size: 1.1em !important;
+        }
+        img {
+          margin-top: 60px;
+          width: 200px !important;
+        }
       }
-      :after {
-        content: "";
-        width: 290px !important;
-        height: 470px !important;
-        background-repeat: no-repeat;
-        position: absolute;
-        background-size: 100% auto;
+      .box3 {
+        img {
+          margin-top: 96px !important;
+        }
+        > p:nth-child(2) {
+          margin-top: 38px !important;
+        }
+      }
+
+      .box2 {
+        img {
+          margin-top: 38px !important;
+        }
+        > p:nth-child(2) {
+          margin-top: 29px !important;
+        }
+      }
+
+      .box1 {
+        img {
+          margin-top: 38px !important;
+        }
+        > p:nth-child(2) {
+          margin-top: 29px !important;
+        }
       }
     }
   }
+}
 
-  .box-info {
-    .box3 {
-      img {
-        margin-top: 96px !important;
-      }
-      > p:nth-child(2) {
-        margin-top: 54px !important;
-        width: 200px !important;
-        height: 74px !important;
-        line-height: 72px !important;
-        font-size: 1.1em !important;
-      }
+.box-info {
+  .box2 {
+    height: 310px;
+    :nth-child(1) > p:nth-child(2) {
+      background-image: url(../img/Rarezas/SinLetras/Common_SinLetras.png);
     }
-    .box2 {
-      img {
-        margin-top: 75px !important;
-      }
-      > p:nth-child(2) {
-        margin-top: 29px !important;
-        width: 200px !important;
-        height: 74px !important;
-        line-height: 72px !important;
-        font-size: 1.1em !important;
-      }
+    :nth-child(2) > p:nth-child(2) {
+      background-image: url(../img/Rarezas/SinLetras/Uncommmon_SinLetras.png);
     }
-    .box1 {
-      img {
-        margin-top: 58px !important;
-      }
-      > p:nth-child(2) {
-        margin-top: 29px !important;
-        width: 200px !important;
-        height: 74px !important;
-        line-height: 72px !important;
-        font-size: 1.1em !important;
-      }
+    :nth-child(3) > p:nth-child(2) {
+      background-image: url(../img/Rarezas/SinLetras/Rare_SinLetras.png);
     }
-    .box3,
-    .box3,
-    .box3 {
+    :nth-child(4) > p:nth-child(2) {
+      background-image: url(../img/Rarezas/SinLetras/Legendary_SinLetras.png);
     }
   }
-
-  .box-info
-    .box-info
-    .box-info
-    .box3
-    .box-info
-    .box2
-    .box-info
-    .box1
-    .box-info
-    .box1
-    > p:nth-child(2),
-  .box-info .box2 > p:nth-child(2),
-  .box-info .box3 > p:nth-child(2) {
-    width: 200px !important;
-    height: 74px !important;
-    line-height: 72px !important;
-    font-size: 1.1em !important;
+  .box1 {
+    height: 310px;
+    :nth-child(1) > p:nth-child(2) {
+      background-image: url(../img/Rarezas/SinLetras/Common_SinLetras.png);
+    }
+    :nth-child(2) > p:nth-child(2) {
+      background-image: url(../img/Rarezas/SinLetras/Uncommmon_SinLetras.png);
+    }
+    :nth-child(3) > p:nth-child(2) {
+      background-image: url(../img/Rarezas/SinLetras/Rare_SinLetras.png);
+    }
+    :nth-child(4) > p:nth-child(2) {
+      background-image: url(../img/Rarezas/SinLetras/Legendary_SinLetras.png);
+    }
   }
-
-  .box-info .box3 > p:nth-child(2),
-  .box-info .box2 > p:nth-child(2),
-  .box-info .box1 > p:nth-child(2) {
-    line-height: 71px !important;
-    font-size: 1.1em !important;
+  .box3 {
+    > p:nth-child(2) {
+      background-image: url(../img/Rarezas/SinLetras/Common_SinLetras.png);
+    }
   }
-
-  .box-info .box3 > p:nth-child(3),
-  .box-info .box2 > p:nth-child(3),
-  .box-info .box1 > p:nth-child(3) {
-    font-size: 1.1em !important;
+  .box3,
+  .box2,
+  .box1 {
+    img {
+      margin-top: 60px;
+      width: 110px;
+      :nth-child(2) {
+        margin-top: 30px;
+      }
+    }
+    > p:nth-child(2) {
+      color: #fff;
+      width: 140px;
+      height: 45px;
+      line-height: 47px;
+      text-align: center;
+      font-family: Orbitron-Black;
+      background-size: 100% auto;
+      font-size: 1.2em;
+    }
+    > p:nth-child(2) {
+      width: 150px;
+      font-size: 0.9em;
+      height: 48px;
+      line-height: 53px;
+    }
+    > p:nth-child(3) {
+      color: #fff;
+      text-align: center;
+      font-size: 0.9em;
+      font-family: Orbitron-Black;
+      margin-top: -12px;
+    }
   }
-
-  .box-info .box1 img,
-  .box-info .box2 img,
-  .box-info .box3 img {
-    margin-top: 60px;
-    width: 200px !important;
-  }
-
-  .box-info .box3 > p:nth-child(2) {
-    margin-top: 38px !important;
-  }
-}
-
-.box-info .box2 {
-  height: 310px;
-}
-
-.box-info .box1 {
-  height: 310px;
-}
-
-.box-info .box1 img,
-.box-info .box2 img,
-.box-info .box3 img {
-  margin-top: 60px;
-  width: 110px;
-}
-
-.box-info .box1 img:nth-child(2),
-.box-info .box2 img:nth-child(2),
-.box-info .box3 img:nth-child(2) {
-  margin-top: 30px;
-}
-
-/* Titulo box */
-.box-info .box1 > p:nth-child(2),
-.box-info .box2 > p:nth-child(2),
-.box-info .box3 > p:nth-child(2) {
-  color: #fff;
-  width: 140px;
-  height: 45px;
-  line-height: 47px;
-  text-align: center;
-  font-family: Orbitron-Black;
-  background-size: 100% auto;
-  font-size: 1.2em;
-}
-
-.box-info .box3 > p:nth-child(2) {
-  background-image: url(../img/Rarezas/SinLetras/Common_SinLetras.png);
-}
-
-.box-info .box2:nth-child(1) > p:nth-child(2),
-.box-info .box1:nth-child(1) > p:nth-child(2) {
-  background-image: url(../img/Rarezas/SinLetras/Common_SinLetras.png);
-}
-
-.box-info .box2:nth-child(2) > p:nth-child(2),
-.box-info .box1:nth-child(2) > p:nth-child(2) {
-  background-image: url(../img/Rarezas/SinLetras/Uncommmon_SinLetras.png);
-}
-
-.box-info .box2:nth-child(3) > p:nth-child(2),
-.box-info .box1:nth-child(3) > p:nth-child(2) {
-  background-image: url(../img/Rarezas/SinLetras/Rare_SinLetras.png);
 }
 
 .box-info .box2:nth-child(4) > p:nth-child(2),
-.box-info .box1:nth-child(4) > p:nth-child(2) {
-  background-image: url(../img/Rarezas/SinLetras/Legendary_SinLetras.png);
-}
-
-.box-info .box2:nth-child(5) > p:nth-child(2),
+.box-info .box1 .box-info .box2:nth-child(5) > p:nth-child(2),
 .box-info .box1:nth-child(5) > p:nth-child(2) {
   background-image: url(../img/Rarezas/SinLetras/Epic_SinLetras.png);
-}
-
-.box-info .box1 > p:nth-child(2),
-.box-info .box2 > p:nth-child(2),
-.box-info .box3 > p:nth-child(2) {
-  width: 150px;
-  font-size: 0.9em;
-  height: 48px;
-  line-height: 53px;
-}
-
-.box-info .box1 > p:nth-child(3),
-.box-info .box2 > p:nth-child(3),
-.box-info .box3 > p:nth-child(3) {
-  color: #fff;
-  text-align: center;
-  font-size: 0.9em;
-  font-family: Orbitron-Black;
-  margin-top: -12px;
 }
 
 .box-info .box3 > p:nth-child(2) {
