@@ -120,6 +120,11 @@ section.formulario {
         font-family: Orbitron-Black;
         font-size: 1.2em; }
 
+@media (max-width: 768px) {
+  section.formulario form {
+    width: 80%;
+    margin-top: 100px; } }
+
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg); }
