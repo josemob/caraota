@@ -45,6 +45,30 @@ header {
     header #logo-header img {
       -webkit-animation: spin 4s infinite linear;
       width: 38px; }
+  header .info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    header .info p {
+      color: white;
+      margin-right: 10px;
+      margin-top: 3px; }
+    header .info .switch_container {
+      border: 2px solid white;
+      border-radius: 25px;
+      height: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .info .switch_container a {
+        font-family: Orbitron-Bold;
+        color: white; }
 
 section.formulario {
   display: -webkit-box;
@@ -54,10 +78,10 @@ section.formulario {
       -ms-flex-pack: center;
           justify-content: center; }
   section.formulario form {
-    width: 80%;
+    width: 700px;
     background-color: #fff;
     font-family: Metropolis-Bold;
-    margin-top: 80px;
+    margin-top: 120px;
     padding: 20px 25px;
     border-radius: 10px; }
     section.formulario form h2 {
