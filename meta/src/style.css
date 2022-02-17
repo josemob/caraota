@@ -41,14 +41,14 @@
 
 .litepaper{
     justify-content: center;
-    width: 600px;
+    width: 530px;
     margin-top: 44px !important;
 }
 .litepaper:before{
     content: 'COPY OUR CONTRACT';
     margin-left: -280px;
     color: white;
-    font-family: 'Orbitron-Medium';
+    font-family: 'Orbitron-Medium', sans-serif;
     font-size: 0.7em;
     position: absolute;
     margin-top: -17px;
@@ -56,11 +56,11 @@
 
 .litepaper a.btn, .litepaper > div:first-child{
     text-decoration: none;
-    padding: 8px 30px;
+    height: 38px;
     border: 2px solid #fff;
     border-radius: 35px;
     color: white;
-    font-family: 'Orbitron-Medium';
+    font-family: 'Orbitron-Medium', sans-serif;
     white-space: nowrap;
     margin-bottom: 15px;
 }
@@ -68,7 +68,7 @@
 /*----Token contract ----*/
 .litepaper > div:first-child{
     border-color: #007fb4;
-    height: 44px;
+    height: 38px;
     margin-bottom: 20px;
     display: flex;
     width: 80%;
@@ -82,11 +82,11 @@
     background-position: center;
     border: none;
     width: 34px;
-    height: 40px;
+    height: 36px;
     border-radius: 20px 0px 0px 20px;
     position: absolute;
-    margin-top: -8px;
-    margin-left: -31px;
+    margin-top: -1px;
+    margin-left: -13px;
 
 }
 
@@ -95,6 +95,7 @@
     flex-grow: 1;
     text-align: center;
     letter-spacing: 0.5em;
+    margin-top: 7px;
 }
 
 .litepaper > div:last-child{
@@ -118,8 +119,8 @@
     position: absolute;
     margin-left: -39px;
     width: 34px;
-    height: 41px;
-    margin-top: -9px;
+    height: 36px;
+    margin-top: -7px;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -405,6 +406,13 @@ sidebar a img {
 
     .litepaper > div:first-child{
         width: 94%;
+    }
+
+    .litepaper > div:first-child p{
+        margin-left: 20px;
+        flex-grow: 1;
+        text-align: center;
+        letter-spacing: 0.2em;
     }
 
     .litepaper:before{
