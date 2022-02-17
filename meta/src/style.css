@@ -39,14 +39,91 @@
     top: 70px;
 }
 
-.litepaper a.btn{
+.litepaper{
+    justify-content: center;
+    width: 45%;
+    margin-top: 44px !important;
+}
+.litepaper:before{
+    content: 'COPY OUR CONTRACT';
+    margin-left: -22%;
+    color: white;
+    font-family: 'Orbitron-Medium';
+    font-size: 0.7em;
+    position: absolute;
+    margin-top: -17px;
+}
+
+.litepaper a.btn, .litepaper > div:first-child{
     text-decoration: none;
     padding: 8px 30px;
     border: 2px solid #fff;
     border-radius: 35px;
     color: white;
     font-family: 'Orbitron-Medium';
+    white-space: nowrap;
+    margin-bottom: 15px;
 }
+
+/*----Token contract ----*/
+.litepaper > div:first-child{
+    border-color: #007fb4;
+    height: 44px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 80%;
+}
+
+.litepaper > div:first-child button{
+    background-color: #007fb4;
+    background-image: url(../img/Copy_Icon.png);
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position: center;
+    border: none;
+    width: 34px;
+    height: 40px;
+    border-radius: 20px 0px 0px 20px;
+    position: absolute;
+    margin-top: -8px;
+    margin-left: -31px;
+
+}
+
+.litepaper > div:first-child p{
+    margin-left: 20px;
+    flex-grow: 1;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+.litepaper > div:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+/*----Token contract ----*/
+
+.litepaper > div:last-child a:nth-child(2){
+    padding-left: 38px;
+}
+.litepaper > div:last-child a:nth-child(2):before{
+    content: '';
+    background: white;
+    background-image: url(../img/Icon_Check.png);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: center;
+    position: absolute;
+    margin-left: -39px;
+    width: 34px;
+    height: 41px;
+    margin-top: -9px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+
 .litepaper a.btn:hover{
     border: 2px solid #007fb4;
 }
@@ -59,7 +136,7 @@
     height: 22px;
     position: absolute;
     top: 25px;
-    right: 13px;
+    right: 70px;
     z-index: 1;
 }
 
@@ -319,6 +396,19 @@ sidebar a img {
 
     .ghost {
         opacity: 1;
+    }
+
+    
+    .litepaper{
+        width: 80%;
+    }
+
+    .litepaper > div:first-child{
+        width: 94%;
+    }
+
+    .litepaper:before{
+        margin-left: -36%;
     }
 
     .box-info .box3,
