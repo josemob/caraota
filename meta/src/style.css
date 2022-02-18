@@ -41,7 +41,7 @@
 
 .litepaper{
     justify-content: center;
-    width: 530px;
+    width: 500px;
     margin-top: 44px !important;
 }
 .litepaper > div:first-child:before{
@@ -71,7 +71,7 @@
     height: 38px;
     margin-bottom: 20px;
     display: flex;
-    width: 470px;
+    width: 440px;
 }
 
 .litepaper > div:first-child button{
@@ -87,7 +87,6 @@
     position: absolute;
     margin-top: -1px;
     margin-left: -13px;
-
 }
 
 .litepaper > div:first-child p{
@@ -417,6 +416,15 @@ sidebar a img {
         flex-grow: 1;
         text-align: center;
         letter-spacing: 0.2em;
+    }
+
+    .litepaper > div:last-child{
+        flex-direction: column;
+        width: 230px;
+    }
+
+    .litepaper > div:last-child a:nth-child(2):before{
+        margin-left: -53px;
     }
 
     .box-info .box3,
