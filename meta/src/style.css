@@ -44,9 +44,9 @@
     width: 530px;
     margin-top: 44px !important;
 }
-.litepaper:before{
+.litepaper > div:first-child:before{
     content: 'COPY OUR CONTRACT';
-    margin-left: -280px;
+    margin-left: 0px;
     color: white;
     font-family: 'Orbitron-Medium', sans-serif;
     font-size: 0.7em;
@@ -71,7 +71,7 @@
     height: 38px;
     margin-bottom: 20px;
     display: flex;
-    width: 80%;
+    width: 470px;
 }
 
 .litepaper > div:first-child button{
@@ -213,11 +213,11 @@
     }
 
     .ghost.left > div:nth-child(1) {
-        margin-left: -100vw;
+        margin-left: -100%;
     }
 
     .ghost.right > div:nth-child(1) {
-        margin-left: 100vw;
+        margin-left: 100%;
     }
 
     .centerg {
@@ -313,7 +313,11 @@ sidebar a img {
 }
 
 .desc {
-    background-image: url(../img/Master_Background.png)
+    background-image: url(../img/Master_Background.png);
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+    overflow-x: hidden;
 }
 
 .desc .info {}
@@ -413,10 +417,6 @@ sidebar a img {
         flex-grow: 1;
         text-align: center;
         letter-spacing: 0.2em;
-    }
-
-    .litepaper:before{
-        margin-left: -36%;
     }
 
     .box-info .box3,
@@ -799,7 +799,7 @@ sidebar a img {
     }
 
     .portada {
-        height: 80vh;
+        height: 100vh;
     }
 
     .portada img {
@@ -808,6 +808,7 @@ sidebar a img {
 
     .portada h4 {
         font-size: 1em;
+        margin-top: 80px;
     }
 
     .info-ser img {
